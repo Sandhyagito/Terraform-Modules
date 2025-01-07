@@ -1,23 +1,29 @@
 variable "ami_value" {
-  description = " Value of the AMI"
+  description = "AMI ID for EC2 instance"
+  type        = string
 }
 
 variable "instance_type_value" {
-    description = "value of the instance type"
+  description = "EC2 instance type"
+  type        = string
 }
 
 variable "key_name" {
-    description = "value of the keypair"
+  description = "EC2 key pair"
+  type        = string
 }
 
 variable "vpc_id" {
-    description = "The ID of the existing VPC where the instance will be launched"
+  description = "The ID of the existing VPC"
+  type        = string
 }
 
 variable "subnet_id" {
-  description = "The ID of the subnet in the VPC where the instance will be launched"
+  description = "The ID of the subnet"
+  type        = string
 }
 
-variable "aws_security_group" {
-    description = "The security group ID for the EC2 instance"
+variable "aws_security_group_id" {
+  description = "The ID of the security group"
+  type        = string
 }
