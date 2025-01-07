@@ -19,5 +19,7 @@ variable "vpc_id" {
 }
 
 variable "aws_security_group" {
-  description = "The security group(s) to associate with the EC2 instance"
+  description = "Security group for the EC2 instance"
+  type        = string
 }
+
