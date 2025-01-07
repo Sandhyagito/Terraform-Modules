@@ -22,8 +22,3 @@ variable "subnet_id" {
   description = "The ID of the subnet"
   type        = string
 }
-
-variable "aws_security_group_id" {
-  description = "The ID of the security group"
-  type        = string
-}
