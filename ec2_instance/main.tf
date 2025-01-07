@@ -7,9 +7,9 @@ resource "aws_instance" "my-server" {
   ami           = var.ami_value
   instance_type = var.instance_type_value
   key_name      = var.key_name
-  subnet_id     = var.subnet_id  # Correct usage, no need to specify vpc_id here
+  subnet_id     = var.subnet_id  
 
-  security_groups = [var.aws_security_group]  # Correct security group reference
+  security_groups = [var.aws_security_group]  
 
   tags = {
     Name = "my-server"
