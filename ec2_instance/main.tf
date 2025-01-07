@@ -88,7 +88,7 @@ resource "aws_instance" "my-server" {
   key_name        = var.key_name
   subnet_id       = var.subnet_id
   vpc_id          = var.vpc_id
-  security_groups = [aws_security_group.Web-SG.name]  # Reference the security group directly
+  security_groups   = [var.aws_security_group]  # Reference the security group directly
 
   tags = {
     Name = "my-server"
