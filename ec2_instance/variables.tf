@@ -18,8 +18,4 @@ variable "vpc_id" {
   description = "VPC ID where the EC2 instance will be launched"
 }
 
-variable "aws_security_group" {
-  description = "Security group for the EC2 instance"
-}
-
 
