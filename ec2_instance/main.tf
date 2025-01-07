@@ -15,6 +15,10 @@ resource "aws_instance" "my-server" {
   # vpc_id        = var.vpc_id
   security_groups = [var.aws_security_group]  
 
+root_block_device {
+    volume_size = 25   # Size in GB
+    volume_type = "gp2"  # General Purpose SSD (default)
+
   tags = {
     Name = "my-server"
   }
