@@ -17,3 +17,9 @@ variable "subnet_id" {
 variable "aws_security_group" {
   description = "Security group for the EC2 instance"
 }
+
+variable "volume_size" {
+  description = "The size of the root volume in GB."
+  type        = number
+  default     = 25  # Default value if not specified
+}
