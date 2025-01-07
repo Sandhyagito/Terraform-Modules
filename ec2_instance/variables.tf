@@ -7,11 +7,11 @@ variable "instance_type_value" {
 }
 
 variable "key_name" {
-  description = "Key pair name to access the EC2 instance"
+  description = "Key pair name to access EC2 instance"
 }
 
 variable "subnet_id" {
-  description = "Subnet ID where the EC2 instance will be launched"
+  description = "Subnet ID for the EC2 instance"
 }
 
 variable "vpc_id" {
