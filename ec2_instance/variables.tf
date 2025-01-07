@@ -17,7 +17,3 @@ variable "subnet_id" {
 variable "aws_security_group" {
   description = "Security group for the EC2 instance"
 }
-
-variable "vpc_id" {
-  description = "The VPC ID to launch the EC2 instance in."
-}
